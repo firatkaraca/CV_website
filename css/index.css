@@ -1,20 +1,21 @@
  body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 0.8rem;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  overflow-x: hidden;
-  background: #f2f2f2;
-}
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: #f2f2f2;
+ }
 
-*{
+ *{
    box-sizing: border-box;
    padding: 0;
    margin: 0;
 }
 
 .headerTop{
+
    background: url(../img/background.png);
    height: 100vh;
    background-size: 100%;
@@ -31,10 +32,10 @@
 }
 
 .hakkımdaTop{
-  height: 100%;
-   overflow: hidden ;
-   
-  
+ height: 100%;
+ overflow: hidden ;
+
+
 }
 
 .computer{
@@ -44,22 +45,17 @@
 
 textarea{
    width: 100%;
-   height: ;
 }
 
 .computerTop{
-   position: absolute;
-   top: 30%;
-   left: 50%;
-   transform: translate(-50%);
-   width: 100%;      
+   position: absolute;   
+   width: 100%;  
+   top: 37%;
 }
 
 .computerImg{
    position: absolute;
-   top: 20%;
-   left: 50%;
-   transform: translate(-50%);
+   
    width: 100%;
 }
 
@@ -79,8 +75,7 @@ textarea{
    height: 100%;
    width: 100%;
    position: relative;
-   overflow: hidden;
-
+   
 }
 
 .yuzde{
@@ -96,16 +91,16 @@ textarea{
 }
 
 .yuzde span{
- font-size: 0rem;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
- z-index: 20;
- letter-spacing: 3px;
- padding: 20px;
- transition: all .5s;
- font-weight: bolder;
+  font-size: 0rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 20;
+  letter-spacing: 3px;
+  padding: 20px;
+  transition: all .5s;
+  font-weight: bolder;
 }
 
 
@@ -180,13 +175,13 @@ textarea{
 }
 
 @keyframes animation1{
- 100%{
+  100%{
    transform: translateY(0);
    opacity: 1;
 }
 }
 @keyframes animation2{
- 100%{
+  100%{
    transform: translateX(0);
    opacity: 1;
 }
@@ -195,7 +190,7 @@ textarea{
 
 
 .footer1{
-   background: url(../img/footer1.png) ;
+  /* background: url(../img/footer1.png) ;
    background-size: 100% 100%;
    background-repeat: no-repeat;
    height: 100vh;
@@ -206,4 +201,77 @@ textarea{
    bottom: 0;
    left: 0;
    right: 0;
+   */
+
+   background-color: #333;
+   color: whitesmoke;
+   height: 40vh;
+   position: relative;
+   bottom: 0;
+   left: 0;
+   right: 0;
 }
+
+
+/*@media only screen and (max-width: 700px){
+   .gridItem:hover .yuzde span{
+
+      font-size: 2rem;
+   }
+   }*/
+
+
+
+
+
+   @media only screen and (max-width: 800px){
+      .gridItem:hover .yuzde span{
+
+         font-size: 1rem;
+      }
+
+
+      .grid{
+
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas: 'item1 item2 '
+         ' item3 item2' 
+         'item4 item5 '
+         'item6 item9'
+         'item6 item7'
+         'item8 item7';
+         grid-gap: 1px;
+         border: 1px solid black;
+         background-color: black;
+         overflow: hidden;
+
+      }
+      .gridItem{
+        
+         overflow: hidden;
+      }
+      .gridItem img{
+         object-fit: cover;
+      }
+      .gridItem8,.gridItem9{
+         height: 10rem;
+      }
+
+
+   }
+
+
+
+   .e{
+      background: url('../img/gif14.gif');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      min-height: 20rem;
+      
+   }
+
+   .f{
+      background-color: black;
+
+      
+   }
