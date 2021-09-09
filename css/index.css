@@ -5,6 +5,7 @@
   margin: 0;
   width: 100%;
   overflow-x: hidden;
+  background: #f2f2f2;
 }
 
 *{
@@ -30,10 +31,10 @@
 }
 
 .hakkımdaTop{
-   height: 30rem;
+  height: 100%;
    overflow: hidden ;
-   border: 1px solid greenyellow;
-   border-radius: 3rem;
+   
+  
 }
 
 .computer{
@@ -68,8 +69,8 @@ textarea{
    grid-template-areas: 'item1 item2 item3 item3 item9 '
    'item4 item2 item5 item6 item9' 
    'item7 item8 item8 item6 item9';
-   grid-gap: 10px;
-   border: 10px solid black;
+   grid-gap: 5px;
+   border: 5px solid black;
    background-color: black;
    overflow: hidden;
 }
@@ -194,14 +195,12 @@ textarea{
 
 
 .footer1{
-   background: url(../img/footer1.png);
+   background: url(../img/footer1.png) ;
    background-size: 100% 100%;
    background-repeat: no-repeat;
-   height: 50vh;
+   height: 100vh;
+   margin: 0;
    margin-top: 5rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
    color: wheat;
    position: relative;
    bottom: 0;
